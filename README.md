@@ -1,44 +1,69 @@
-# vCard - Personal portfolio
+# Je'Don Carter - Developer Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Welcome to my **developer portfolio**! This site showcases my experience as a **gameplay, AI, and VR/AR developer**, highlighting my projects, skills, and work in **Unity 3D, Unreal Engine, and AI-driven simulations**.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## 🚀 About Me
 
-## Demo
+I’m a **Gameplay & Content Developer** with over **8 years** of experience specializing in:
+- **VR/AR Development**: Creating immersive experiences for training, gaming, and simulations.
+- **AI & Networking**: Implementing behavior trees, Photon Fusion, and real-time multiplayer interactions.
+- **Game Development**: Building AI-driven characters, procedural systems, and interactive gameplay.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+I’ve worked with **startups, universities, and international clients** to develop cutting-edge projects in the **VR/AR, gaming, and AI** space. My work has been recognized at **CES Eureka Park** and deployed in hospitals and classrooms worldwide.
 
-## Prerequisites
+---
 
-Before you begin, ensure you have met the following requirements:
+## 🖥️ Live Demo
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+🔗 **Check out the live site:** [jedoncarter.github.io](https://jedoncarter.github.io) *(update with actual link)*
 
-## Installing vCard
+---
 
-To install **vCard**, follow these steps:
+## 📂 Projects & Experience
 
-Linux and macOS:
+### VR/AR Research And Teaching Coordinator - **Cal Poly Pomona**
+📅 October 2022 - March 2023 | August 2024 - Present  
+- Mentored **master's students** and **senior project teams** on Unity 3D development.
+- Conducted **VR/AR workshops**, technical talks, and hands-on training.
+- Provided **troubleshooting support** for research projects in XR.
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+### Owner - **Cinnamon Roll Studios**
+📅 January 2021 - Present  
+- Developed **networked cross-platform VR applications** for training, simulations, and games.
+- Partnered with **dozens of companies** to create custom Unity-based solutions.
 
-Windows:
+### VR Gameplay Developer - **Neolithic Dawn**
+📅 February 2024 - July 2024  
+- Designed **AI systems** for tamable and fightable wildlife in a prehistoric VR world.
+- Used **Behavior Designer** for modular **predator, prey, and companion AI**.
+- Integrated **Photon PUN 2** for multiplayer mechanics.
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+🔗 [View More Projects](#) *(add links to GitHub projects if available)*
 
-## Contact
+---
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+## 🛠️ Technologies & Skills
 
-## License
+**Languages & Tools:**
+- **Primary:** C#, Unity 3D, Behavior Designer, Photon Fusion, Mirror Networking
+- **Familiar:** C++, JavaScript, HTML/CSS, Unreal Engine (Blueprints)
 
-MIT
+**Specialties:**
+- VR/AR Development (Unity XR, SteamVR, OpenXR)
+- AI & Behavior Trees (Enemy AI, Procedural AI, NPC Behaviors)
+- Multiplayer & Networking (Real-time Sync, FPS Mechanics)
+- Gameplay Mechanics (Weapons, Combat AI, Physics-based Interactions)
+
+---
+
+## 📜 How This Portfolio Was Built
+
+This portfolio is hosted using **GitHub Pages** and built with:
+- **HTML, CSS, JavaScript** (Static site)
+- **Bootstrap / TailwindCSS** (for styling)
+- **React / Jekyll / Hugo** (if using a generator, specify)
+
+To run this project locally:
+```sh
+git clone https://github.com/jedoncarter/jedoncarter.github.io.git
+cd jedoncarter.github.io
