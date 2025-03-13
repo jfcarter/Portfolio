@@ -713,8 +713,8 @@
                     <button class="gallery-btn prev" onclick="prevImage()">&#10094;</button>
 
                     <div class="gallery-content">
-                        <img id="gallery-image" src="./assets/images/gallery/ShooterAI.png" alt="Gallery Image">
-                        <p id="gallery-description">A shooter AI logic tree demonstrating cover-seeking behavior, target prioritization, and tactical movement in combat scenarios.</p>
+                        <img id="gallery-image" src="./assets/images/gallery/CombatAndRoleplayGif.gif" alt="Gallery Image">
+                        <p id="gallery-description">Bringing tabletop RPGs to life, turn-based combat and immersive first-person roleplay fused into a seamless VR experience.</p>
                     </div>
 
                     <button class="gallery-btn next" onclick="nextImage()">&#10095;</button>
@@ -1047,7 +1047,12 @@
         <script>
             // Gallery Images and Descriptions
             const galleryData = [
+                { src: "./assets/images/gallery/CombatAndRoleplayGif.gif", desc: "Bringing tabletop RPGs to life, turn-based combat and immersive first-person roleplay fused into a seamless VR experience." },
+                { src: "./assets/images/gallery/Multiplayer.gif", desc: "A test of real-time networking, shooting another player across the country in my sci-fi game, proving smooth multiplayer functionality." },
+                { src: "./assets/images/gallery/FlyingShip.gif", desc: "Piloting a spaceship in VR, immersive controls and physics-driven flight for an authentic sci-fi experience." },
                 { src: "./assets/images/gallery/ShooterAI.png", desc: "A shooter AI logic tree demonstrating cover-seeking behavior, target prioritization, and tactical movement in combat scenarios." },
+                { src: "./assets/images/gallery/GMAdventurerOrcTakeoverSmaller.gif", desc: "Empowering the Dungeon Master in VR; spawning, controlling, and roleplaying NPCs to create dynamic storytelling moments." },
+                { src: "./assets/images/gallery/CharacterWeaponModule.gif", desc: "A flexible sci-fi weapon system allowing seamless weapon swaps via modular handles—balancing accessibility with the complexity of modularity in game design." },
                 { src: "./assets/images/gallery/BeastAI.png", desc: "A visual breakdown of a predator AI in Behavior Designer, showcasing pathfinding, aggression triggers, and dynamic decision-making." }
             ];
 
@@ -1084,7 +1089,7 @@
                 }
             }
 
-            interval = setInterval(autoCycleImages, 4700); // Change image every 4.7 seconds
+            interval = setInterval(autoCycleImages, 7000); // Change image every 7 seconds
         </script>
 
         <!-- Add CSS to style the gallery -->
