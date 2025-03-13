@@ -15,7 +15,7 @@ I’ve worked with **startups, universities, and international clients** to deve
 
 ## 🖥️ Live Demo
 
-🔗 **Check out the live site:** [[jedoncarter.github.io](https://jedoncarter.github.io)](https://jfcarter.github.io/Portfolio/)
+🔗 **Check out the live site:** (https://jfcarter.github.io/Portfolio/)
 
 ---
 
