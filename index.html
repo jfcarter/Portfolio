@@ -1066,6 +1066,14 @@
                 document.getElementById("gallery-description").textContent = galleryData[currentIndex].desc;
             }
 
+            function preloadImages() {
+                galleryData.forEach(item => {
+                    const img = new Image();
+                    img.src = item.src;
+                });
+            }
+            window.onload = preloadImages; // Preload images when the page loads
+
             function prevImage() {
                 autoCycle = false;
                 /*clearInterval(interval);*/
