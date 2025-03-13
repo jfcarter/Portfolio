@@ -38,8 +38,6 @@ I’ve worked with **startups, universities, and international clients** to deve
 - Used **Behavior Designer** for modular **predator, prey, and companion AI**.
 - Integrated **Photon PUN 2** for multiplayer mechanics.
 
-🔗 [View More Projects](#) *(add links to GitHub projects if available)*
-
 ---
 
 ## 🛠️ Technologies & Skills
@@ -62,8 +60,3 @@ This portfolio is hosted using **GitHub Pages** and built with:
 - **HTML, CSS, JavaScript** (Static site)
 - **Bootstrap / TailwindCSS** (for styling)
 - **React / Jekyll / Hugo** (if using a generator, specify)
-
-To run this project locally:
-```sh
-git clone https://github.com/jedoncarter/jedoncarter.github.io.git
-cd jedoncarter.github.io
