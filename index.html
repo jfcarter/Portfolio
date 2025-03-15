@@ -1124,20 +1124,13 @@
                 position: relative;
             }
 
-                .gallery-content img {
-                    width: 100%;
-                    max-width: 800px; /* Ensures uniform width across different screen sizes */
-                    height: 450px; /* Forces a fixed height for consistency */
-                    object-fit: cover; /* Ensures images and videos fill the space without stretching */
-                    border-radius: 8px;
-                    display: block;
-                    margin: auto;
-                }
+                .gallery-content img,
                 .gallery-content video {
                     width: 100%;
                     max-width: 800px;
-                    height: 450px;
-                    object-fit: cover;
+                    height: auto; /* Allow height to scale naturally */
+                    aspect-ratio: 16/9; /* Ensures consistent proportions without cropping */
+                    object-fit: contain; /* Ensures full image/video visibility without cropping */
                     border-radius: 8px;
                     display: block;
                     margin: auto;
