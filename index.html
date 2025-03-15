@@ -1114,8 +1114,10 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                max-width: 800px;
+                max-width: 100%;
+                overflow: hidden;
                 margin: auto;
+                padding: 10px;
             }
 
             .gallery-content {
@@ -1123,8 +1125,9 @@
             }
 
                 .gallery-content img {
-                    width: 800px;
-                    height: 500px;
+                    width: 100%;
+                    max-width: 800px; /* Ensures it doesn't get too large on bigger screens */
+                    height: auto; /* Maintains aspect ratio */
                     object-fit: cover;
                     border-radius: 8px;
                     display: block;
@@ -1153,14 +1156,29 @@
                 transform: translateY(-50%);
                 font-size: 18px;
                 border-radius: 50%;
+                z-index: 2;
+            }
+
+            @media (max-width: 600px) {
+                .gallery-btn {
+                    padding: 5px;
+                    font-size: 14px;
+                }
             }
 
             .prev {
-                left: -50px;
+                left: 10px; /* Bring it inside the container */
             }
 
             .next {
-                right: -50px;
+                right: 10px; /* Bring it inside the container */
+            }
+
+            @media (max-width: 600px) {
+                .prev, .next {
+                    left: 5px;
+                    right: 5px;
+                }
             }
         </style>
 
