@@ -781,22 +781,22 @@
                 <ul class="project-list">
 
                     <!--<li class="project-item active" data-filter-item="" data-category="professional" data-year="June 2024 - Present" data-link="https://youtu.be/XE-F9KPwBIg" data-summary="Allows users to fly an evtol in VR while we measure their physiological signals using gadgets and also portray their data within simulation to see how motion sick they feel">
-            <a href="#">
+                <a href="#">
 
-                <figure class="project-img">
-                    <div class="project-item-icon-box">
-                        <ion-icon name="logo-youtube" role="img" class="md hydrated" aria-label="logo youtube"></ion-icon>
-                    </div>
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="logo-youtube" role="img" class="md hydrated" aria-label="logo youtube"></ion-icon>
+                        </div>
 
-                    <img src="./assets/images/vrevtol_anim.gif" alt="VReVTOL" loading="lazy" data-project-img="">
-                </figure>
+                        <img src="./assets/images/vrevtol_anim.gif" alt="VReVTOL" loading="lazy" data-project-img="">
+                    </figure>
 
-                <h3 class="project-title">VR eVTOL Flying Simulation (funded by DoD)</h3>
+                    <h3 class="project-title">VR eVTOL Flying Simulation (funded by DoD)</h3>
 
-                <p class="project-category">Professional</p>
+                    <p class="project-category">Professional</p>
 
-            </a>
-            </li>-->
+                </a>
+                </li>-->
                     <!-- Orions Reach (Personal) -->
                     <li class="project-item active" data-filter-item data-category="personal">
                         <a href="https://youtu.be/fnIsMo3aSNU?si=wF7rIix0oYFg4Mgb" target="_blank" rel="noopener noreferrer">
@@ -1045,16 +1045,16 @@
 
         <!-- Add Javascript for gallery button functionality -->
         <script>
-            // Gallery Images and Descriptions
+            // Gallery Images and Descriptions with Custom Durations (milliseconds)
             const galleryData = [
-                { src: "./assets/images/gallery/CombatAndRoleplayGif.gif", desc: "Bringing tabletop RPGs to life, turn-based combat and immersive first-person roleplay fused into a seamless VR experience." },
-                { src: "./assets/images/gallery/Multiplayer.gif", desc: "A test of real-time networking, shooting another player across the country in my sci-fi game, proving smooth multiplayer functionality." },
-                { src: "./assets/images/gallery/FlyingShip.gif", desc: "Piloting a spaceship in VR, immersive controls and physics-driven flight for an authentic sci-fi experience." },
-                { src: "./assets/images/gallery/ShooterAI.png", desc: "A shooter AI logic tree demonstrating cover-seeking behavior, target prioritization, and tactical movement in combat scenarios." },
-                { src: "./assets/images/gallery/GMAdventurerOrcTakeoverSmaller.gif", desc: "Empowering the Dungeon Master in VR; spawning, controlling, and roleplaying NPCs to create dynamic storytelling moments." },
-                { src: "./assets/images/gallery/CharacterWeaponModule.gif", desc: "A flexible sci-fi weapon system allowing seamless weapon swaps via modular handles—balancing accessibility with the complexity of modularity in game design." },
-                { src: "./assets/images/gallery/BeastAI.png", desc: "A visual breakdown of a predator AI in Behavior Designer, showcasing pathfinding, aggression triggers, and dynamic decision-making." },
-                { src: "./assets/images/gallery/elemental_showdown_gameplay.gif", desc: "Earthbending in my ATLA fan game, inspired by The Legend of Korra. Uses real-time physics, networking, and dynamic terrain manipulation for bender battles." }
+                { src: "./assets/images/gallery/CombatAndRoleplayGif.gif", desc: "Bringing tabletop RPGs to life, turn-based combat and immersive first-person roleplay fused into a seamless VR experience.", duration: 12000 },
+                { src: "./assets/images/gallery/Multiplayer.gif", desc: "A test of real-time networking, shooting another player across the country in my sci-fi game, proving smooth multiplayer functionality.", duration: 8000 },
+                { src: "./assets/images/gallery/FlyingShip.gif", desc: "Piloting a spaceship in VR, immersive controls and physics-driven flight for an authentic sci-fi experience.", duration: 20000 },
+                { src: "./assets/images/gallery/ShooterAI.png", desc: "A shooter AI logic tree demonstrating cover-seeking behavior, target prioritization, and tactical movement in combat scenarios.", duration: 7400 },
+                { src: "./assets/images/gallery/GMAdventurerOrcTakeoverSmaller.gif", desc: "Empowering the Dungeon Master in VR; spawning, controlling, and roleplaying NPCs to create dynamic storytelling moments.", duration: 9000 },
+                { src: "./assets/images/gallery/CharacterWeaponModule.gif", desc: "A flexible sci-fi weapon system allowing seamless weapon swaps via modular handles—balancing accessibility with the complexity of modularity in game design.", duration: 14000 },
+                { src: "./assets/images/gallery/BeastAI.png", desc: "A visual breakdown of a predator AI in Behavior Designer, showcasing pathfinding, aggression triggers, and dynamic decision-making.", duration: 7400 },
+                { src: "./assets/images/gallery/elemental_showdown_gameplay.gif", desc: "Earthbending in my ATLA fan game, inspired by The Legend of Korra. Uses real-time physics, networking, and dynamic terrain manipulation for bender battles.", duration: 5000 }
             ];
 
             let currentIndex = 0;
@@ -1064,6 +1064,10 @@
             function updateGallery() {
                 document.getElementById("gallery-image").src = galleryData[currentIndex].src;
                 document.getElementById("gallery-description").textContent = galleryData[currentIndex].desc;
+
+                // Reset the interval with the current image's duration
+                clearInterval(interval);
+                interval = setTimeout(autoCycleImages, galleryData[currentIndex].duration);
             }
 
             function preloadImages() {
@@ -1075,15 +1079,15 @@
             window.onload = preloadImages; // Preload images when the page loads
 
             function prevImage() {
-                autoCycle = false;
-                /*clearInterval(interval);*/
+                /*autoCycle = false;*/
+                clearTimeout(interval);
                 currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
                 updateGallery();
             }
 
             function nextImage() {
-                autoCycle = false;
-                /*clearInterval(interval);*/
+                /*autoCycle = false;*/
+                clearTimeout(interval);
                 currentIndex = (currentIndex + 1) % galleryData.length;
                 updateGallery();
             }
@@ -1093,13 +1097,12 @@
                     currentIndex = (currentIndex + 1) % galleryData.length;
                     updateGallery();
                 }
-                else {
-                    autoCycle = true;
-                }
             }
 
-            interval = setInterval(autoCycleImages, 7000); // Change image every 7 seconds
+            // Start the first cycle using the first item's duration
+            interval = setTimeout(autoCycleImages, galleryData[currentIndex].duration);
         </script>
+
 
         <!-- Add CSS to style the gallery -->
         <style>
@@ -1135,6 +1138,7 @@
                     display: block;
                     margin: auto;
                 }
+
                 .gallery-content p {
                     margin-top: 10px;
                     color: white;
